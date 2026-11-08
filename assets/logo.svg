@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Quatro Code">
+  <circle cx="58" cy="58" r="38" fill="none" stroke="#0F1A3C" stroke-width="10"/>
+  <path d="M78 78 L102 102" stroke="#0F1A3C" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="46" cy="46" r="7" fill="#3D4BFF"/>
+  <circle cx="70" cy="46" r="7" fill="#FF5A47"/>
+  <circle cx="46" cy="70" r="7" fill="#FFC93C"/>
+  <circle cx="70" cy="70" r="7" fill="#12B5A0"/>
+</svg>
