@@ -1,8 +1,8 @@
-/* === ACENTO B: azul noche con un solo bloque de color (coral) === */
+/* === ACENTO B2: azul noche con un solo bloque de color (naranja más oscuro) === */
 :root {
-  --accent: #ff5a47;      /* relleno y adornos; sobre fondo oscuro 5.5:1 */
-  --on-accent: #0a1230;   /* texto sobre el coral (6.0:1) */
-  --link: #0f1a3c;        /* enlaces sobre fondo claro: el coral no pasa contraste como texto sobre blanco (3.1:1) */
+  --accent: #e8492f;      /* relleno y adornos; sobre fondo oscuro 4.4:1 */
+  --on-accent: #0a1230;   /* texto sobre el naranja (4.75:1) */
+  --link: #0f1a3c;        /* enlaces sobre fondo claro: el naranja no pasa contraste como texto sobre blanco (3.9:1) */
 }
 /* === fin del bloque de acento === */
 
