@@ -6,18 +6,18 @@
   <title>Kuatro Digital | Soluciones digitales</title>
   <meta name="description" content="Kuatro Digital: software a la medida, soporte, publicidad y diseño. Cuatro socios en El Salvador.">
   <meta name="theme-color" content="#0F1A3C">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo.svg?v=3" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <a class="skip" href="#contenido">Ir al contenido</a>
 
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Kuatro Digital, inicio">
-      <img src="assets/logo.svg" alt="" width="34" height="34">
+      <img src="assets/logo.svg?v=3" alt="" width="36" height="36">
       <span>Kuatro Digital</span>
     </a>
     <nav aria-label="Principal">
@@ -44,10 +44,10 @@
 
       <figure class="hero-mark">
         <svg id="q-mark" viewBox="0 0 120 120" role="group" aria-label="Logo de Kuatro Digital: cuatro bloques de colores, uno por cada socio">
-          <rect class="dot" data-i="0" x="6" y="6" width="50" height="50" rx="14" fill="#3D4BFF" tabindex="0"><title>Gerardo</title></rect>
-          <rect class="dot" data-i="1" x="64" y="6" width="50" height="50" rx="14" fill="#FF5A47" tabindex="0"><title>Luis</title></rect>
-          <rect class="dot" data-i="2" x="6" y="64" width="50" height="50" rx="14" fill="#FFC93C" tabindex="0"><title>Carlos</title></rect>
-          <rect class="dot" data-i="3" x="64" y="64" width="50" height="50" rx="14" fill="#12B5A0" tabindex="0"><title>Brian</title></rect>
+          <path class="dot" data-i="0" fill="#3D4BFF" tabindex="0" d="M6 6H40A16 16 0 0 1 56 22V40A16 16 0 0 1 40 56H22A16 16 0 0 1 6 40Z"><title>Gerardo</title></path>
+          <path class="dot" data-i="1" fill="#FF5A47" tabindex="0" d="M64 22A16 16 0 0 1 80 6H114V40A16 16 0 0 1 98 56H80A16 16 0 0 1 64 40Z"><title>Luis</title></path>
+          <path class="dot" data-i="2" fill="#FFC93C" tabindex="0" d="M6 80A16 16 0 0 1 22 64H40A16 16 0 0 1 56 80V98A16 16 0 0 1 40 114H6Z"><title>Carlos</title></path>
+          <path class="dot" data-i="3" fill="#12B5A0" tabindex="0" d="M64 80A16 16 0 0 1 80 64H98A16 16 0 0 1 114 80V114H80A16 16 0 0 1 64 98Z"><title>Brian</title></path>
         </svg>
         <figcaption id="q-caption" aria-live="polite">Cada bloque es un socio. Pasa el cursor sobre uno.</figcaption>
       </figure>
@@ -66,19 +66,19 @@
     <section class="section alt" id="mision-vision">
       <h2>Misión y visión</h2>
       <div class="quad">
-        <article>
+        <article class="c-blue">
           <h3>Misión</h3>
           <p>Crear soluciones digitales útiles, claras y confiables que ayuden a las empresas a trabajar y vender mejor.</p>
         </article>
-        <article>
+        <article class="c-coral">
           <h3>Visión</h3>
           <p>Ser una firma digital de referencia en El Salvador y la región, reconocida por su trabajo cercano y bien hecho.</p>
         </article>
-        <article>
+        <article class="c-sun">
           <h3>Valores</h3>
           <p>Honestidad, trabajo en equipo, calidad y mejora continua.</p>
         </article>
-        <article>
+        <article class="c-teal">
           <h3>Forma de trabajo</h3>
           <p>Entregas pequeñas y frecuentes, comunicación directa y código que otros puedan mantener.</p>
         </article>
@@ -99,44 +99,46 @@
     <!-- TECNOLOGÍAS -->
     <section class="section alt" id="tecnologias">
       <h2>Desarrollo de software</h2>
-      <p class="lead">Programar es nuestra especialidad, y en Java somos especialistas.</p>
+      <p class="lead section-lead">Programar es nuestra especialidad, y en Java somos especialistas.</p>
 
-      <div class="tech-block">
-        <h3>Java y su ecosistema</h3>
-        <p>Trabajamos con Java en todas sus versiones, incluidas las antiguas, y damos mantenimiento a sistemas legacy.</p>
-        <ul class="chips">
-          <li>Spring Boot</li>
-          <li>Java EE / Jakarta EE</li>
-          <li>JSF (JavaServer Faces)</li>
-          <li>Thymeleaf</li>
-          <li>Quarkus</li>
-          <li>MicroProfile</li>
-          <li>JBoss</li>
-          <li>Liberty</li>
-        </ul>
-      </div>
+      <div class="tech">
+        <div class="tech-java">
+          <h3>Java y su ecosistema</h3>
+          <p>Trabajamos con Java en todas sus versiones, incluidas las antiguas, y damos mantenimiento a sistemas legacy.</p>
+          <ul class="chips">
+            <li>Spring Boot</li>
+            <li>Java EE / Jakarta EE</li>
+            <li>JSF (JavaServer Faces)</li>
+            <li>Thymeleaf</li>
+            <li>Quarkus</li>
+            <li>MicroProfile</li>
+            <li>JBoss</li>
+            <li>Liberty</li>
+          </ul>
+        </div>
 
-      <div class="tech-block">
-        <h3>Lenguajes</h3>
-        <ul class="chips" id="lenguajes">
-          <li>Java</li>
-          <li>JavaScript (Node.js, Express)</li>
-          <li>.NET</li>
-          <li>PL/SQL</li>
-          <li>Python</li>
-        </ul>
-      </div>
+        <div class="tech-card">
+          <h3>Lenguajes</h3>
+          <ul class="chips" id="lenguajes">
+            <li>Java</li>
+            <li>JavaScript (Node.js, Express)</li>
+            <li>.NET</li>
+            <li>PL/SQL</li>
+            <li>Python</li>
+          </ul>
+        </div>
 
-      <div class="tech-block">
-        <h3>Bases de datos</h3>
-        <ul class="chips db">
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">Oracle</li>
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">PostgreSQL</li>
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">SQL Server</li>
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MariaDB</li>
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MySQL</li>
-          <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MongoDB</li>
-        </ul>
+        <div class="tech-card">
+          <h3>Bases de datos</h3>
+          <ul class="chips db">
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">Oracle</li>
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">PostgreSQL</li>
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">SQL Server</li>
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MariaDB</li>
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MySQL</li>
+            <li><img src="assets/icono-base-de-datos.svg" alt="" width="20" height="20">MongoDB</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -144,10 +146,10 @@
     <section class="section" id="equipo">
       <h2>Los cuatro fundadores</h2>
       <ul class="team" id="team">
-        <li data-i="0"><span class="swatch" style="background:#3D4BFF"></span><strong>Gerardo de Jesús Ramírez Ramos</strong><span>Fundador</span></li>
-        <li data-i="1"><span class="swatch" style="background:#FF5A47"></span><strong>Luis Eduardo Vázquez Villalta</strong><span>Fundador</span></li>
-        <li data-i="2"><span class="swatch" style="background:#FFC93C"></span><strong>Carlos Francisco Torres Rodríguez</strong><span>Fundador</span></li>
-        <li data-i="3"><span class="swatch" style="background:#12B5A0"></span><strong>Brian Alejandro Rogel Ángel</strong><span>Fundador</span></li>
+        <li data-i="0"><span class="avatar a0" aria-hidden="true">GR</span><strong>Gerardo de Jesús Ramírez Ramos</strong><span>Fundador</span></li>
+        <li data-i="1"><span class="avatar a1" aria-hidden="true">LV</span><strong>Luis Eduardo Vázquez Villalta</strong><span>Fundador</span></li>
+        <li data-i="2"><span class="avatar a2" aria-hidden="true">CT</span><strong>Carlos Francisco Torres Rodríguez</strong><span>Fundador</span></li>
+        <li data-i="3"><span class="avatar a3" aria-hidden="true">BR</span><strong>Brian Alejandro Rogel Ángel</strong><span>Fundador</span></li>
       </ul>
     </section>
 
@@ -155,6 +157,7 @@
     <section class="section alt" id="clientes">
       <h2>Clientes y proyectos</h2>
       <div class="empty">
+        <img src="assets/logo-una-tinta.svg" alt="" width="44" height="44">
         <p>Aquí aparecerán los clientes y proyectos de Kuatro Digital.</p>
         <p class="muted">¿Quieres ser el primero? <a href="#contacto">Cuéntanos tu idea</a>.</p>
       </div>
@@ -181,6 +184,6 @@
     <small>Java, .NET, Python, Oracle, Microsoft SQL Server y las demás tecnologías mencionadas son marcas de sus respectivos dueños. Se citan solo para indicar con qué trabajamos; no implican afiliación ni respaldo.</small>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
