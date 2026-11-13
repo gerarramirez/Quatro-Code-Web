@@ -127,7 +127,9 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
 .services p { margin: 0; font-size: 1rem; }
 
 /* Tecnologías: tarjetas del mismo tamaño y peso */
-.tech { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.tech { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.25rem; }
+.tech-card { grid-column: span 2; }
+.tech-card.wide { grid-column: span 3; }
 .tech > * { max-width: none; margin: 0; }
 .tech-card { background: var(--paper); border-radius: var(--r); padding: 1.9rem; }
 .tech-card h3 { margin-bottom: 1.1rem; font-size: 1.35rem; }
@@ -141,24 +143,26 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
 .tech-note { margin-top: 1.5rem; font-size: 0.85rem; color: var(--muted); padding-right: 30%; }
 @media (max-width: 52rem) { .tech-note { padding-right: 0; } }
 
-/* Equipo */
-.team { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem 1.25rem; }
+/* Equipo: cuatro tarjetas idénticas en estructura y tamaño */
+.team { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; align-items: stretch; }
 .team li {
-  display: grid; grid-template-columns: auto 1fr; column-gap: 1.1rem; align-items: center;
-  padding: 1.1rem 1.25rem; background: var(--white); border-radius: 1.25rem; border: 1.5px solid transparent;
+  display: grid; grid-template-columns: auto 1fr; column-gap: 1.25rem; align-items: start;
+  padding: 1.6rem; background: var(--white); border-radius: var(--r); border: 1.5px solid transparent;
   transition: border-color 0.15s, transform 0.15s;
 }
 .team li.active { border-color: var(--ink); transform: translateY(-2px); }
 .avatar {
-  grid-row: span 2; width: 3.4rem; height: 3.4rem; display: grid; place-items: center;
-  font-weight: 800; font-size: 1.1rem; color: var(--ink);
+  width: 4rem; height: 4rem; display: grid; place-items: center;
+  font-weight: 800; font-size: 1.25rem; color: var(--ink);
 }
-.avatar.a0 { background: var(--blue);  color: #fff; border-radius: 0 1.1rem 1.1rem 1.1rem; }
-.avatar.a1 { background: var(--coral); border-radius: 1.1rem 0 1.1rem 1.1rem; }
-.avatar.a2 { background: var(--sun);   border-radius: 1.1rem 1.1rem 1.1rem 0; }
-.avatar.a3 { background: var(--teal);  border-radius: 1.1rem 1.1rem 0 1.1rem; }
-.team strong { font-size: 1.1rem; line-height: 1.25; }
-.team li span:last-child { color: var(--muted); font-size: 0.95rem; }
+.avatar.a0 { background: var(--blue);  color: #fff; border-radius: 0 1.3rem 1.3rem 1.3rem; }
+.avatar.a1 { background: var(--coral); border-radius: 1.3rem 0 1.3rem 1.3rem; }
+.avatar.a2 { background: var(--sun);   border-radius: 1.3rem 1.3rem 1.3rem 0; }
+.avatar.a3 { background: var(--teal);  border-radius: 1.3rem 1.3rem 0 1.3rem; }
+.team strong { display: block; font-size: 1.2rem; line-height: 1.25; margin-bottom: 0.15rem; }
+.team .role { display: block; color: var(--ink); font-weight: 500; font-size: 0.98rem; }
+.team .meta { display: block; color: var(--muted); font-size: 0.92rem; margin: 0.2rem 0 0.7rem; }
+.team p { margin: 0; color: var(--muted); font-size: 0.98rem; line-height: 1.55; }
 
 /* Clientes */
 .empty { border: 2px dashed #c5cbe0; border-radius: var(--r); padding: 2.5rem; background: var(--paper); }
@@ -196,6 +200,7 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
   .hero-mark { order: -1; }
   #q-mark { width: min(60%, 14rem); }
   .tech { grid-template-columns: 1fr; }
+  .tech-card, .tech-card.wide { grid-column: auto; }
   .team { grid-template-columns: 1fr; }
   .site-header nav li:not(:last-child) { display: none; }
 }
