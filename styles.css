@@ -1,11 +1,11 @@
-/* === PALETA C: cuatro colores sobrios, uno por socio (c = sobre fondo claro, d = sobre fondo oscuro) === */
+/* === PALETA A: los cuatro colores de la web original, uno por socio (c = fondo claro, d = fondo oscuro) === */
 :root {
-  --c1: #3b4cca; --c2: #cf5c43; --c3: #d4a12a; --c4: #1f9e8e;
-  --d1: #5a6be0; --d2: #d9694f; --d3: #d9a82e; --d4: #2aae9d;
-  --accent: #3b4cca;      /* barra de progreso y detalles sueltos */
+  --c1: #3d4bff; --c2: #ff5a47; --c3: #ffc93c; --c4: #12b5a0;
+  --d1: #3d4bff; --d2: #ff5a47; --d3: #ffc93c; --d4: #12b5a0;
+  --accent: #3d4bff;      /* detalles sueltos */
   --on-accent: #ffffff;
-  --link: #3b4cca;        /* enlaces sobre fondo claro (6.8:1) */
-  --ink-deep: #0a1230;    /* texto sobre terracota, mostaza y verde */
+  --link: #3d4bff;        /* enlaces sobre fondo claro (5.8:1) */
+  --ink-deep: #0a1230;    /* texto sobre coral, amarillo y verde (6.0:1 o más) */
   --four: linear-gradient(90deg, var(--c1) 0 25%, var(--c2) 25% 50%, var(--c3) 50% 75%, var(--c4) 75% 100%);
 }
 /* === fin de la paleta === */
