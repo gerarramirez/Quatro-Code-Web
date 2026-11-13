@@ -3,10 +3,10 @@
   var rows = document.querySelectorAll("#team li");
   var caption = document.getElementById("q-caption");
   var names = [
-    "Gerardo de Jesús Ramírez Ramos",
-    "Luis Eduardo Vázquez Villalta",
-    "Carlos Francisco Torres Rodríguez",
-    "Brian Alejandro Rogel Ángel"
+    "Gerardo Ramírez",
+    "Luis Vázquez",
+    "Carlos Torres",
+    "Bryan Rogel"
   ];
   var idle = caption ? caption.textContent : "";
 
