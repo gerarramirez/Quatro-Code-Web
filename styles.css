@@ -75,7 +75,7 @@ h1 {
   line-height: 1; letter-spacing: -0.04em; font-weight: 800;
   margin: 0 0 1.4rem; max-width: 13ch; text-wrap: balance;
 }
-h1 .hl { color: var(--accent); }
+h1 .hl { background: var(--accent); color: var(--on-accent); padding: 0 0.14em 0.04em; margin: 0 -0.04em; border-radius: 0.2em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .lead { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 40ch; margin: 0 0 1.75rem; }
 .hero .lead { color: var(--soft); }
 .btn {
