@@ -6,8 +6,8 @@ Sitio web de Kuatro Studio. Es estático: HTML, CSS y un poco de JavaScript, sin
 
 - `index.html`: contenido de todas las secciones
 - `styles.css`: diseño y colores (variables al inicio)
-- `script.js`: interacción del logo y el equipo
-- `assets/logo.svg`: logo a color (cuatro bloques, uno por socio)
+- `script.js`: interacción del logo y el equipo, aparición al hacer scroll, contadores y barra de progreso (todo se apaga con `prefers-reduced-motion`)
+- `assets/logo.svg`: logo azul y blanco con un bloque de acento. En `styles.css` el bloque `ACENTO` (arriba) es la única diferencia entre v6-e y v6-f
 - `assets/logo-una-tinta.svg`: logo de un solo color, para bordado e impresión
 - `assets/icono-base-de-datos.svg`: ícono genérico de base de datos
 
@@ -15,7 +15,7 @@ Sitio web de Kuatro Studio. Es estático: HTML, CSS y un poco de JavaScript, sin
 
 - **Historia, misión, visión, valores:** edita las secciones `#historia` y `#mision-vision`. Los textos actuales son borradores.
 - **Logos de lenguajes:** están en `assets/tech/` y vienen del conjunto comunitario Devicon (licencia MIT del repositorio), no de las páginas oficiales de cada marca. Los logos siguen siendo marcas de sus dueños. Antes de usar la web de forma comercial, revisa las guías de marca de cada uno (Java/Oracle es la más estricta) o quita el que no quieras: basta con borrar su `<img>` en `#lenguajes`.
-- **Versiones anteriores (una rama por versión):** `quatro-code-b1` (primera versión, Quatro Code), `kuatro-digital` (nueva marca), `kuatro-digital-v2` (rediseño con hero oscuro), `kuatro-digital-v3` (servicios y tecnologías genéricas), `kuatro-digital-v4` (logos, nube y equipo) y `kuatro-studio-v5` (cambio de marca a Kuatro Studio). Los cambios grandes van siempre en una rama nueva.
+- **Versiones anteriores (una rama por versión):** `quatro-code-b1` (primera versión, Quatro Code), `kuatro-digital` (nueva marca), `kuatro-digital-v2` (rediseño con hero oscuro), `kuatro-digital-v3` (servicios y tecnologías genéricas), `kuatro-digital-v4` (logos, nube y equipo) `kuatro-studio-v5` (cambio de marca a Kuatro Studio), `kuatro-studio-v6-e` (web creativa e interactiva, logo azul y blanco con acento celeste) y `kuatro-studio-v6-f` (igual, con acento azul petróleo). Los cambios grandes van siempre en una rama nueva.
 - **Clientes:** reemplaza el recuadro de `#clientes` por una lista de clientes o proyectos.
 - **Redes sociales:** en `#contacto`, cambia `href="#contacto"` por la URL real y borra el atributo `data-pending` de cada enlace.
 - **Equipo:** agrega el cargo de cada fundador en lugar de "Fundador".

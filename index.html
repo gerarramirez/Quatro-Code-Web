@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kuatro Studio | Soluciones digitales</title>
   <meta name="description" content="Kuatro Studio: software a la medida, soporte, publicidad y diseño. Cuatro socios en El Salvador.">
-  <meta name="theme-color" content="#0F1A3C">
-  <link rel="icon" href="assets/logo.svg?v=7" type="image/svg+xml">
+  <meta name="theme-color" content="#0B1B3A">
+  <link rel="icon" href="assets/logo.svg?v=8" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <a class="skip" href="#contenido">Ir al contenido</a>
 
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Kuatro Studio, inicio">
-      <img src="assets/logo.svg?v=7" alt="" width="36" height="36">
+      <img src="assets/logo.svg?v=8" alt="" width="36" height="36">
       <span>Kuatro Studio</span>
     </a>
     <nav aria-label="Principal">
@@ -25,38 +26,49 @@
         <li><a href="#historia">Historia</a></li>
         <li><a href="#mision-vision">Misión y visión</a></li>
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
         <li><a href="#tecnologias">Tecnologías</a></li>
         <li><a href="#equipo">Equipo</a></li>
         <li><a href="#clientes">Clientes</a></li>
         <li><a href="#contacto" class="nav-cta">Contacto</a></li>
       </ul>
     </nav>
+    <div class="progress" id="progress" aria-hidden="true"></div>
   </header>
 
   <main id="contenido">
     <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="hero-text">
-        <h1>Soluciones digitales para tu negocio.</h1>
-        <p class="lead">Software a la medida, soporte, publicidad y diseño. Cuatro socios, un solo equipo.</p>
-        <p><a class="btn" href="#contacto">Escríbenos</a></p>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Soluciones <span class="hl">digitales</span> para tu negocio.</h1>
+          <p class="lead">Software a la medida, soporte, publicidad y diseño. Cuatro socios, un solo equipo.</p>
+          <p><a class="btn" href="#contacto">Escríbenos</a></p>
+        </div>
+
+        <figure class="hero-mark">
+          <svg id="q-mark" viewBox="0 0 120 120" role="group" aria-label="Logo de Kuatro Studio: cuatro bloques, uno por cada socio">
+            <rect class="dot" data-i="0" tabindex="0" x="6" y="6" width="48.3" height="48.3" rx="11.3"><title>Gerardo</title></rect>
+            <rect class="dot" data-i="1" tabindex="0" x="65.7" y="6" width="48.3" height="48.3" rx="11.3"><title>Luis</title></rect>
+            <rect class="dot" data-i="2" tabindex="0" x="6" y="65.7" width="48.3" height="48.3" rx="11.3"><title>Carlos</title></rect>
+            <rect class="dot" data-i="3" tabindex="0" x="65.7" y="65.7" width="48.3" height="48.3" rx="11.3"><title>Bryan</title></rect>
+          </svg>
+          <figcaption id="q-caption" aria-live="polite">Cada bloque es un socio. Pasa el cursor sobre uno.</figcaption>
+        </figure>
       </div>
 
-      <figure class="hero-mark">
-        <svg id="q-mark" viewBox="0 0 120 120" role="group" aria-label="Logo de Kuatro Studio: cuatro bloques de colores, uno por cada socio">
-          <path class="dot" data-i="0" fill="#3D4BFF" tabindex="0" d="M6 6H40A16 16 0 0 1 56 22V40A16 16 0 0 1 40 56H22A16 16 0 0 1 6 40Z"><title>Gerardo</title></path>
-          <path class="dot" data-i="1" fill="#FF5A47" tabindex="0" d="M64 22A16 16 0 0 1 80 6H114V40A16 16 0 0 1 98 56H80A16 16 0 0 1 64 40Z"><title>Luis</title></path>
-          <path class="dot" data-i="2" fill="#FFC93C" tabindex="0" d="M6 80A16 16 0 0 1 22 64H40A16 16 0 0 1 56 80V98A16 16 0 0 1 40 114H6Z"><title>Carlos</title></path>
-          <path class="dot" data-i="3" fill="#12B5A0" tabindex="0" d="M64 80A16 16 0 0 1 80 64H98A16 16 0 0 1 114 80V114H80A16 16 0 0 1 64 98Z"><title>Brian</title></path>
-        </svg>
-        <figcaption id="q-caption" aria-live="polite">Cada bloque es un socio. Pasa el cursor sobre uno.</figcaption>
-      </figure>
+      <ul class="stats" aria-label="Kuatro Studio en cifras">
+        <li><b><span data-count="42">42</span>+</b><span>años de experiencia sumados entre los cuatro socios</span></li>
+        <li><b><span data-count="6">6</span></b><span>sectores en los que hemos trabajado</span></li>
+        <li><b><span data-count="6">6</span></b><span>servicios digitales</span></li>
+        <li><b><span data-count="4">4</span></b><span>socios, un solo equipo</span></li>
+      </ul>
     </section>
 
     <!-- HISTORIA -->
     <section class="section" id="historia">
       <h2>Nuestra historia</h2>
-      <div class="prose">
+      <div class="prose" data-reveal>
         <p>Kuatro Studio nace de cuatro socios que quieren ayudar a las empresas a crecer con tecnología. El nombre lo dice todo: <em>kuatro</em> somos los fundadores, y cada uno aporta su parte.</p>
         <p>Empezamos con software, que es nuestra especialidad, y vamos sumando más áreas digitales y más gente. Esta sección crecerá con el tiempo: cómo empezamos, los primeros proyectos y lo que hemos aprendido.</p>
       </div>
@@ -65,7 +77,7 @@
     <!-- MISIÓN Y VISIÓN -->
     <section class="section alt" id="mision-vision">
       <h2>Misión y visión</h2>
-      <div class="quad">
+      <div class="quad" data-reveal>
         <article class="c-blue">
           <h3>Misión</h3>
           <p>Crear soluciones digitales útiles, claras y confiables que ayuden a las empresas a trabajar y vender mejor.</p>
@@ -89,19 +101,30 @@
     <section class="section" id="servicios">
       <h2>Servicios</h2>
       <ul class="services">
-        <li><h3>Desarrollo de software a la medida</h3><p>Sistemas web, aplicaciones móviles y servicios diseñados para cómo trabaja tu negocio.</p></li>
-        <li><h3>Mantenimiento y soporte</h3><p>Corregimos, mejoramos y damos soporte continuo a tu software.</p></li>
-        <li><h3>Modernización de sistemas</h3><p>Mantenemos tu sistema actual y, cuando conviene, lo rediseñamos con tecnología nueva sin empezar de cero.</p></li>
-        <li><h3>Diseño gráfico</h3><p>Identidad visual y piezas gráficas para tu marca.</p></li>
-        <li><h3>Diseño UX</h3><p>Experiencias de usuario claras, pensadas para que tus clientes lo usen sin esfuerzo.</p></li>
-        <li><h3>Publicidad</h3><p>Campañas y presencia digital para que más clientes te encuentren.</p></li>
+        <li data-n="01" data-reveal style="--d:0.00s"><h3>Desarrollo de software a la medida</h3><p>Sistemas web, aplicaciones móviles y servicios diseñados para cómo trabaja tu negocio.</p></li>
+        <li data-n="02" data-reveal style="--d:0.07s"><h3>Mantenimiento y soporte</h3><p>Corregimos, mejoramos y damos soporte continuo a tu software.</p></li>
+        <li data-n="03" data-reveal style="--d:0.14s"><h3>Modernización de sistemas</h3><p>Mantenemos tu sistema actual y, cuando conviene, lo rediseñamos con tecnología nueva sin empezar de cero.</p></li>
+        <li data-n="04" data-reveal style="--d:0.21s"><h3>Diseño gráfico</h3><p>Identidad visual y piezas gráficas para tu marca.</p></li>
+        <li data-n="05" data-reveal style="--d:0.28s"><h3>Diseño UX</h3><p>Experiencias de usuario claras, pensadas para que tus clientes lo usen sin esfuerzo.</p></li>
+        <li data-n="06" data-reveal style="--d:0.35s"><h3>Publicidad</h3><p>Campañas y presencia digital para que más clientes te encuentren.</p></li>
       </ul>
     </section>
 
+    <!-- PROCESO -->
+    <section class="section alt" id="proceso">
+      <h2>Cómo trabajamos</h2>
+      <ol class="steps" id="steps">
+        <li data-reveal style="--d:0s"><span class="step-n" aria-hidden="true">1</span><h3>Escuchamos</h3><p>Entendemos tu negocio y qué necesitas resolver.</p></li>
+        <li data-reveal style="--d:0.08s"><span class="step-n" aria-hidden="true">2</span><h3>Diseñamos</h3><p>Proponemos una solución clara, con alcance y tiempos definidos.</p></li>
+        <li data-reveal style="--d:0.16s"><span class="step-n" aria-hidden="true">3</span><h3>Construimos</h3><p>Entregas pequeñas y frecuentes, para que veas avances y ajustemos juntos.</p></li>
+        <li data-reveal style="--d:0.24s"><span class="step-n" aria-hidden="true">4</span><h3>Acompañamos</h3><p>Soporte y mejora continua, con código que otros puedan mantener.</p></li>
+      </ol>
+    </section>
+
     <!-- TECNOLOGÍAS -->
-    <section class="section alt" id="tecnologias">
+    <section class="section" id="tecnologias">
       <h2>Tecnologías</h2>
-      <div class="tech">
+      <div class="tech" data-reveal>
         <div class="tech-card wide">
           <h3>Lenguajes</h3>
           <ul class="chips" id="lenguajes">
@@ -161,34 +184,34 @@
     <section class="section" id="equipo">
       <h2>Los cuatro fundadores</h2>
       <ul class="team" id="team">
-        <li data-i="0">
+        <li data-i="0" data-reveal style="--d:0.00s">
           <span class="avatar a0" aria-hidden="true">GR</span>
           <div>
-            <strong>Gerardo de Jesús Ramírez Ramos</strong>
+            <strong>Gerardo Ramírez</strong>
             <span class="meta">12 años de experiencia. Sectores: banca, gobierno, telecomunicaciones, aeronáutica y seguros.</span>
             <p>Desarrollador full stack con experiencia en backend, frontend, bases de datos y desarrollo móvil. Ha administrado y dirigido proyectos.</p>
           </div>
         </li>
-        <li data-i="1">
+        <li data-i="1" data-reveal style="--d:0.08s">
           <span class="avatar a1" aria-hidden="true">LV</span>
           <div>
-            <strong>Luis Eduardo Vázquez Villalta</strong>
+            <strong>Luis Vázquez</strong>
             <span class="meta">12 años de experiencia. Sectores: gobierno y banca.</span>
             <p>Ha desarrollado sistemas de administración financiera del sector público y de banca digital, incluido el mantenimiento de sistemas legacy.</p>
           </div>
         </li>
-        <li data-i="2">
+        <li data-i="2" data-reveal style="--d:0.16s">
           <span class="avatar a2" aria-hidden="true">CT</span>
           <div>
-            <strong>Carlos Francisco Torres Rodríguez</strong>
+            <strong>Carlos Torres</strong>
             <span class="meta">9 años de experiencia. Sectores: banca y gobierno.</span>
             <p>Comenzó en desarrollo a la medida y soporte, y hoy trabaja en backend de sistemas administrativos. Ha administrado y dirigido proyectos.</p>
           </div>
         </li>
-        <li data-i="3">
+        <li data-i="3" data-reveal style="--d:0.24s">
           <span class="avatar a3" aria-hidden="true">BR</span>
           <div>
-            <strong>Brian Alejandro Rogel Ángel</strong>
+            <strong>Bryan Rogel</strong>
             <span class="meta">9 años de experiencia. Sectores: gobierno y salud.</span>
             <p>Ha trabajado en fábricas digitales haciendo software a la medida, y hoy desarrolla sistemas de expedientes para el sector salud.</p>
           </div>
@@ -199,7 +222,7 @@
     <!-- CLIENTES -->
     <section class="section alt" id="clientes">
       <h2>Clientes y proyectos</h2>
-      <div class="empty">
+      <div class="empty" data-reveal>
         <img src="assets/logo-una-tinta.svg" alt="" width="44" height="44">
         <p>Aquí aparecerán los clientes y proyectos de Kuatro Studio.</p>
         <p class="muted">¿Quieres ser el primero? <a href="#contacto">Cuéntanos tu idea</a>.</p>
@@ -227,6 +250,6 @@
     <small>Java, .NET, Python, JavaScript, Kotlin, TypeScript, PHP, Android, AWS, Google Cloud, Microsoft Azure, Oracle, Microsoft SQL Server, PostgreSQL, MySQL, MariaDB, MongoDB, iOS y las demás tecnologías mencionadas son marcas de sus respectivos dueños. Se citan solo para indicar con qué trabajamos; no implican afiliación ni respaldo.</small>
   </footer>
 
-  <script src="script.js?v=7" defer></script>
+  <script src="script.js?v=8" defer></script>
 </body>
 </html>
