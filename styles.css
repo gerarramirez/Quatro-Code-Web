@@ -1,8 +1,8 @@
 /* === ACENTO: única diferencia entre kuatro-studio-v6-e (celeste) y kuatro-studio-v6-f (azul petróleo) === */
 :root {
-  --accent: #22d3ee;      /* relleno, bordes y adornos */
-  --on-accent: #0b1b3a;   /* texto sobre el acento (contraste 9.4:1) */
-  --link: #0b2a5b;        /* enlaces sobre fondo claro (el celeste no pasa contraste como texto sobre blanco) */
+  --accent: #0e7490;      /* azul petróleo: relleno, bordes y adornos; en fondo oscuro solo en elementos grandes (3.2:1) */
+  --on-accent: #ffffff;   /* texto sobre el acento (contraste 5.4:1) */
+  --link: #0e7490;        /* enlaces sobre fondo claro (5.4:1 sobre blanco) */
 }
 /* === fin del bloque de acento === */
 
@@ -75,7 +75,7 @@ h1 {
   line-height: 1; letter-spacing: -0.04em; font-weight: 800;
   margin: 0 0 1.4rem; max-width: 13ch; text-wrap: balance;
 }
-h1 .hl { color: var(--accent); }
+h1 .hl { background: var(--accent); color: var(--on-accent); padding: 0 0.14em 0.04em; margin: 0 -0.04em; border-radius: 0.2em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .lead { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 40ch; margin: 0 0 1.75rem; }
 .hero .lead { color: var(--soft); }
 .btn {
