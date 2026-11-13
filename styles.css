@@ -1,16 +1,16 @@
-/* === ACENTO: única diferencia entre kuatro-studio-v6-e (celeste) y kuatro-studio-v6-f (azul petróleo) === */
+/* === ACENTO B: azul noche con un solo bloque de color (coral) === */
 :root {
-  --accent: #22d3ee;      /* relleno, bordes y adornos */
-  --on-accent: #0b1b3a;   /* texto sobre el acento (contraste 9.4:1) */
-  --link: #0b2a5b;        /* enlaces sobre fondo claro (el celeste no pasa contraste como texto sobre blanco) */
+  --accent: #ff5a47;      /* relleno y adornos; sobre fondo oscuro 5.5:1 */
+  --on-accent: #0a1230;   /* texto sobre el coral (6.0:1) */
+  --link: #0f1a3c;        /* enlaces sobre fondo claro: el coral no pasa contraste como texto sobre blanco (3.1:1) */
 }
 /* === fin del bloque de acento === */
 
 :root {
   --paper: #f2f6fb;
   --white: #ffffff;
-  --ink: #0b2a5b;
-  --night: #0b1b3a;
+  --ink: #0f1a3c;
+  --night: #0f1a3c;
   --muted: #44547a;
   --soft: #b5c2e0;
   --line: #d8e0ee;
@@ -125,7 +125,7 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
 /* Misión y visión: bloques como los del logo */
 .quad { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 .quad article { background: var(--paper); border-radius: var(--r); padding: 2rem 2rem 2.2rem; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
-.quad article:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem -1.2rem rgba(11, 42, 91, 0.45); }
+.quad article:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem -1.2rem rgba(15, 26, 60, 0.45); }
 .quad article::before { content: ""; display: block; width: 2.4rem; height: 2.4rem; margin-bottom: 1.25rem; background: var(--ink); border-radius: 0.9rem; transition: background 0.3s, transform 0.4s var(--ease); }
 .quad article:hover::before { background: var(--accent); transform: rotate(90deg); }
 .quad .c-blue::before  { border-top-left-radius: 0; }
@@ -143,7 +143,7 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
 }
 .services li::before { content: attr(data-n); display: block; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.08em; opacity: 0.75; margin-bottom: 1.6rem; }
 .services li::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: currentColor; opacity: 0.55; transform: scaleX(0); transform-origin: left; transition: transform 0.45s var(--ease); }
-.services li:hover { transform: translateY(-6px); box-shadow: 0 1.4rem 2.2rem -1.4rem rgba(11, 27, 58, 0.55); }
+.services li:hover { transform: translateY(-6px); box-shadow: 0 1.4rem 2.2rem -1.4rem rgba(15, 26, 60, 0.55); }
 .services li:hover::after { transform: scaleX(1); }
 .services li:nth-child(1) { background: var(--ink); color: #fff; border-top-left-radius: 0; }
 .services li:nth-child(2) { background: var(--white); border: 2px solid var(--ink); }
@@ -196,7 +196,7 @@ h3 { font-size: 1.25rem; margin: 0 0 0.45rem; letter-spacing: -0.01em; }
   padding: 1.6rem; background: var(--white); border-radius: var(--r); border: 2px solid transparent;
   transition: border-color 0.2s, transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.team li.active { border-color: var(--ink); transform: translateY(-3px); box-shadow: 0 1rem 2rem -1.3rem rgba(11, 42, 91, 0.5); }
+.team li.active { border-color: var(--ink); transform: translateY(-3px); box-shadow: 0 1rem 2rem -1.3rem rgba(15, 26, 60, 0.5); }
 .avatar {
   width: 4rem; height: 4rem; display: grid; place-items: center;
   font-weight: 800; font-size: 1.25rem; background: var(--ink); color: #fff; border-radius: 1.3rem;
